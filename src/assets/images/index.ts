@@ -1,1 +1,1 @@
-export { default as calendar } from './Calendar.png'
+export { default as calendar } from './calendar.png'
