@@ -23,3 +23,7 @@ export const Hero = styled('div', {
     color: '$gray200',
   },
 })
+
+export const ClaimUsernameFormWrapper = styled('div', {
+  marginTop: '$6',
+})
