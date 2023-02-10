@@ -31,7 +31,7 @@ export const ClaimUsernameForm = () => {
   const router = useRouter()
 
   const handleClaimFormSubmit = async (values: FormValues) => {
-    await router.push(`/register?username=${values.username}`)
+    await router.push(`/register/register-user?username=${values.username}`)
   }
 
   return (

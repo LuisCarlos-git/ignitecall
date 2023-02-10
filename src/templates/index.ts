@@ -1,2 +1,3 @@
 export { HomeTemplate } from './home'
-export { RegisterTemplate } from './Register'
+export { RegisterUserTemplate } from './RegisterUser'
+export { ConnectCalendarTemplate } from './ConnectCalendar'
