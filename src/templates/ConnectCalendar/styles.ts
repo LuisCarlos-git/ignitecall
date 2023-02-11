@@ -1,4 +1,4 @@
-import { Box, Button, styled } from '@ignite-ui/react'
+import { Box, Button, styled, Text } from '@ignite-ui/react'
 
 export const Wrapper = styled('main', {
   display: 'flex',
@@ -29,4 +29,9 @@ export const NextStepWrapper = styled('div', {
   [`${Button}`]: {
     width: '100%',
   },
+})
+
+export const AuthError = styled(Text, {
+  color: '#f75a68',
+  marginTop: '$2',
 })
