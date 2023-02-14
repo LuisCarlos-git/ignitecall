@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import { Heading, Text } from '@ignite-ui/react'
 
-import { ClaimUsernameForm } from '@/components/Home'
+import { ClaimUsernameForm } from '@/components/Forms'
 
 import { calendar } from '@/assets/images'
 

@@ -1,23 +1,12 @@
-import { z } from 'zod'
+import { useRouter } from 'next/router'
 import { useForm } from 'react-hook-form'
 import { ArrowRight } from 'phosphor-react'
 import { zodResolver } from '@hookform/resolvers/zod'
 import { Button, TextInput } from '@ignite-ui/react'
 
 import * as Styled from './styles'
-import { useRouter } from 'next/router'
 
-const schema = z.object({
-  username: z
-    .string()
-    .min(3, { message: 'Nome do usuário muito curto' })
-    .regex(/^[a-zA-Z-]+$/, {
-      message: 'Nome do usuário tem caracteres inválidos',
-    })
-    .transform((value) => value.toLowerCase()),
-})
-
-type FormValues = z.infer<typeof schema>
+import { FormValues, schema } from './schema'
 
 export const ClaimUsernameForm = () => {
   const {
